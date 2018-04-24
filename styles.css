@@ -1,0 +1,144 @@
+body{
+    margin:0px!important;
+    background: url(https://ae01.alicdn.com/kf/HTB1SFXBRpXXXXcWXpXXq6xXFXXXz/7x5FT-Dark-Blue-Przestrze-Chmury-Niebo-Gwiazdy-Noc-Wszech-wiata-Klienta-Photo-Studio-T-o-Banner.jpg_640x640.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100%;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    
+}
+
+.wrapper {
+    border:1px solid #000;
+    display: flex;
+    justify-content: flex-end!important;
+    padding-bottom: 5px;
+    border-bottom: 1px solid  rgb(175, 157, 157);
+    
+}
+
+.wrapper input, button {
+    background-color:transparent;
+    border:0;
+    color: rgb(223, 216, 216);
+}
+
+.wrapper button{
+     border: none;
+     color: rgb(223,216,216);
+}
+.wrapper button:hover{
+    text-decoration: none;
+    background: transparent;
+}
+
+.wrapper input {
+    padding-right:20px; 
+    height: 25px;
+    border:1px solid rgb(223, 216, 216);
+}
+.dotdot{
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.row{
+    margin: 0px!important ;
+    padding: 0px!important ;
+
+}
+.card{
+    background: transparent!important;
+    border: none!important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.headerLeft{
+    color: white;
+    font-size: 60px; 
+}
+
+.headerMid{
+    font-size: 30px;
+    color: white; 
+    border-right: 1px solid gray !important;
+    margin-bottom: 50px;
+}
+.icon{
+    width: 200px;
+    height: 200px;
+    
+}
+h5{
+    color: #fff!important;
+}
+.headerRight{
+    font-size: 15px;
+    color: white;
+    padding-top: 50px;
+    line-height: 40px;
+    
+}
+
+#list{
+    display: flex;
+    overflow-y: hidden;
+    max-height: 200px;
+    width:100%;
+    padding: 5px;
+    margin-top: 15px;
+    
+}
+
+
+::-webkit-scrollbar{
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color:transparent;
+    border: 1px solid rgb(94, 89, 89);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 50px; 
+    -webkit-width:5;
+    background-color: rgb(0, 68, 255);
+    
+}
+.dzien{
+    background: rgba(199, 194, 194, 0.5);
+    margin: 2px;
+    display: block;
+    padding: 20px 15px;
+    font-size: 17px;
+    min-width: 140px;
+    text-align: center ;
+}
+.dzien:nth-child(1){
+    background: transparent;
+    margin: 0 50px ;
+    min-width: 200px;
+    
+}
+
+.dzien > img{
+    margin-left: -5px;
+}
+.dzien > p{
+    font-size: 24px;
+    font-weight: 700;
+}
+.dzien > h2{
+    font-size: 20px;
+    font-weight: 600;
+    color:rgb(22, 21, 21);
+}
+

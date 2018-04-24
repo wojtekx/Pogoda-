@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prognoza pogody</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="box">
+        <form class="form-inline my-2 my-lg-0 wrapper navbar-expand-md navbar-light">
+            <input class=" mr-sm-2" type="search" id="cityName">
+            <button class="btn btn-outline-success my-2 my-sm-0" onclick="getWeather(event);" type="submit">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="dotdot">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+        </form>
+
+        <!-- <option value="krakow">
+        <option value="warszawa">
+        <option value="wroclaw">
+        <option value="poznan">
+        <option value="gdansk">
+        <option value="rzeszow">
+        <option value="bydgoszcz"> -->
+
+
+        <div class="row">
+            <div class="card col-lg-6" style="width: 18rem;">
+                <div class="card-body headerLeft mx-auto">
+                    <div id="weather-city"></div>
+                    <img id="weather-icon" class="icon" />
+                </div>
+
+            </div>
+
+            <div class="card col-lg-3 mt-auto mx-auto headerMid" style="width: 18rem;">
+                <div class="card-body ">
+                    <div class="card-title " id="weather-temp"></div>
+                    <div id="data"></div>
+                </div>
+
+            </div>
+
+            <div class="card col-lg-3 ml-auto headerRight" style="width: 18rem;">
+                <div class="card-body">
+                    
+                        <button class="reload">
+                            <i class="fas fa-sync"></i>
+                        </button> Up-to-date
+                    
+                    <div class=" headerRight">
+                        <div id="weather-pressure"></div>
+                        <div id="weather-humidity"></div>
+                        <div id="weather-wind"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card col-lg-12 mt-auto mx-auto">
+            <div class="card-body ">
+                <div id="list"> </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
